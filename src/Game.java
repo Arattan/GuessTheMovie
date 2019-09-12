@@ -3,6 +3,7 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class Game{
+    String name;
 
     public Game() throws FileNotFoundException {
         File movies = new File("movies.txt");
