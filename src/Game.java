@@ -3,16 +3,24 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class Game{
-    String name;
+    private String [] movies = {"the shawshank redemption", "the godfather",
+            "the dark knight", "schindler's list"};
 
-    public Game() throws FileNotFoundException {
+    public Game() {//throws FileNotFoundException
+        //File movies = new File("movies.txt");
+        //Scanner fileScanner = new Scanner(movies);
+        // String [] args = {fileScanner.nextLine()};
 
-        File movies = new File("movies.txt");
-        Scanner fileScanner = new Scanner(movies);
-        int movie = (int) (Math.random() * 24) + 1;
+        int randNum = (int) (Math.random() * 4);
+        System.out.println(randNum);
+        String movie = this.movies[randNum];
+        System.out.println(movie);
 
-        while(fileScanner.hasNextLine()){
-            System.out.println(fileScanner.nextLine());
-        }
+
+            // System.out.println(fileScanner.nextLine());
     }
-}
+
+
+        //int movieName = movie.split(" ").length;
+
+    }
