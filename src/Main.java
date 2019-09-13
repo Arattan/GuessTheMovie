@@ -9,9 +9,7 @@ public class Main {
         //TODO Need to create a game object on start up which randomly chooses a movie from the list
         //TODO Where will the movie list be kept? The Game should have a File Scanner to find the names from the list.
         System.out.println("Welcome to Guess The Movie!");
-
-
-            Game game = new Game();
+        Game game = new Game();
         //} catch (FileNotFoundException exception){
             //throw exception;
         }

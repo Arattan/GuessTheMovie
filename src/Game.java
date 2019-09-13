@@ -6,18 +6,18 @@ public class Game{
     private String [] movies = {"the shawshank redemption", "the godfather",
             "the dark knight", "schindler's list"};
 
-    public Game() {//throws FileNotFoundException
-        //File movies = new File("movies.txt");
-        //Scanner fileScanner = new Scanner(movies);
-        // String [] args = {fileScanner.nextLine()};
+    public Game() {         //throws FileNotFoundException
+                            //File movies = new File("movies.txt");
+                            //Scanner fileScanner = new Scanner(movies);
+                                // String [] args = {fileScanner.nextLine()};
 
         int randNum = (int) (Math.random() * 4);
         System.out.println(randNum);
         String movie = this.movies[randNum];
         System.out.println(movie);
-
-
-            // System.out.println(fileScanner.nextLine());
+        int titleLength = movie.length();
+        System.out.println(titleLength);
+                        // System.out.println(fileScanner.nextLine());
     }
 
 
