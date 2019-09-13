@@ -2,6 +2,7 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class Main {
+    private static String guess;
 
     public static void main(String[] args) throws FileNotFoundException {
 
@@ -12,7 +13,8 @@ public class Main {
         System.out.println("Welcome to Guess The Movie!");
         System.out.println("Guess a letter: ");
         Scanner sc = new Scanner(System.in);
-        System.out.println(sc.nextLine());
+        guess = sc.nextLine();
+        System.out.println(guess);
         Game game = new Game();
 
 
