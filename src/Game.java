@@ -14,11 +14,10 @@ public class Game{
         System.out.println(randNum);
         String movie = this.movies[randNum];
         System.out.println(movie);
-        int titleLength = movie.length();
-        System.out.println(titleLength);
         String maskedString = movie.replaceAll("[a-zA-Z0-9]","_");
         System.out.println(maskedString);
                         // System.out.println(fileScanner.nextLine());
+
     }
 
 
